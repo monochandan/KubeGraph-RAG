@@ -2,6 +2,7 @@
 
 from sentence_transformers import SentenceTransformer
 
+
 model = SentenceTransformer(
     "sentence-transformers/all-MiniLM-L6-v2"
 )
@@ -9,3 +10,6 @@ model = SentenceTransformer(
 
 def embed(text: str):
     return model.encode(text).tolist()
+
+
+
