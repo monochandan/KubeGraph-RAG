@@ -335,11 +335,26 @@ Each chunk has a unique `chunk_id`, which will later act as the bridge between t
 
 Example:
 
-```text
-nodes:chunk_0
-pods:chunk_0
-pods:chunk_1
-architecture:chunk_1
+```Score: 0.7804392111039645
+Chunk: nodes:chunk_0
+1. [Kubernetes Documentation](/docs/) 2. [Concepts](/docs/concepts/) 3. [Cluster Architecture](/docs/concepts/architecture/) 4. Nodes Nodes ===== Kubernetes runs your [workload](/docs/concepts/workloads/ "A workload is an application running on Kubernetes.") by placing [containers](/docs/concepts/co
+--------------------------------------------------------------------------------
+Score: 0.7217033671317491
+Chunk: pods:chunk_0
+1. [Kubernetes Documentation](/docs/) 2. [Concepts](/docs/concepts/) 3. [Workloads](/docs/concepts/workloads/) 4. Pods Pods ==== *Pods* are the smallest deployable units of computing that you can create and manage in Kubernetes. A *Pod* (as in a pod of whales or pea pod) is a group of one or more [c
+--------------------------------------------------------------------------------
+Score: 0.7048214009723555
+Chunk: pods:chunk_1
+with no assigned node, and selects a node for them to run on.") picks a node for the Pod to run on. In any cluster where there is more than one operating system for running nodes, you should set the [kubernetes.io/os](/docs/reference/labels-annotations-taints/#kubernetes-io-os) label correctly on ea
+--------------------------------------------------------------------------------
+Score: 0.6901060527499895
+Chunk: architecture:chunk_1
+[kubelet](/docs/reference/command-line-tools-reference/kubelet/) takes a set of PodSpecs that are provided through various mechanisms and ensures that the containers described in those PodSpecs are running and healthy. The kubelet doesn't manage containers which were not created by Kubernetes. ### k
+--------------------------------------------------------------------------------
+Score: 0.6752191580766718
+Chunk: architecture:chunk_0
+1. [Kubernetes Documentation](/docs/) 2. [Concepts](/docs/concepts/) 3. Cluster Architecture Cluster Architecture ==================== The architectural concepts behind Kubernetes. A Kubernetes cluster consists of a control plane plus a set of worker machines, called nodes, that run containerized ap
+--------------------------------------------------------------------------------
 ```
 
 ---
