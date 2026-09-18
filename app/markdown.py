@@ -1,3 +1,4 @@
+# Step 7. Download your Kubernetes corpus
 import os
 import requests
 from markdownify import markdownify as md
