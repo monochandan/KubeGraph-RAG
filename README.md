@@ -335,7 +335,8 @@ Each chunk has a unique `chunk_id`, which will later act as the bridge between t
 
 Example:
 
-```Score: 0.7804392111039645
+```
+Score: 0.7804392111039645
 Chunk: nodes:chunk_0
 1. [Kubernetes Documentation](/docs/) 2. [Concepts](/docs/concepts/) 3. [Cluster Architecture](/docs/concepts/architecture/) 4. Nodes Nodes ===== Kubernetes runs your [workload](/docs/concepts/workloads/ "A workload is an application running on Kubernetes.") by placing [containers](/docs/concepts/co
 --------------------------------------------------------------------------------
